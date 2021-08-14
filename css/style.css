@@ -1,9 +1,4 @@
 /**
-Theme Name: Trakey - Transport & Logistic HTML Template
-Author: Softnio
-Version: 1.0.2
-*/
-/**
  * Table of Contents
  * 1.0 - Fonts
  * 2.0 - Reset css
@@ -214,14 +209,15 @@ p {
   border: none;
 }
 .navbar-custom .navbar-brand {
-  /* padding: 42px 37px; */
-  padding: 0.6rem 0 0 0.6rem;
-  background: #ececec;
+  background: #fff;
   width: 100%;
   height: 106px;
   display: block;
   transition: all 0.3s;
   transition-property: height, padding;
+}
+#mainNav {
+  border-bottom: 1px solid #cd8428;
 }
 .navbar-custom .navbar-brand img {
   max-height: 9rem;
@@ -241,7 +237,7 @@ p {
   overflow: hidden;
 }
 .navbar-custom.affix .bottom-bar {
-  background: #101327;
+  background: #fff;
 }
 .navbar-custom.affix .navbar-brand {
   height: 60px;
@@ -292,7 +288,8 @@ p {
   color: #000;
 }
 .navbar-custom .bottom-bar {
-  background: #191c30;
+  /* background: #191c30; */
+  background: #fff;
 }
 .navbar-custom .bottom-bar .office .nice-select {
   width: 100%;
@@ -337,13 +334,14 @@ p {
   border-bottom: 3px solid #cd8428;
 }
 .navbar-custom .bottom-bar .nav li a {
-  color: #fff;
+  color: #cd8428;
   font-family: "arimo";
   font-weight: 700;
+  font-size: 15px;
 }
 .navbar-custom .bottom-bar .nav li a:hover {
   border-bottom: 3px solid #cd8428;
-  color: #fff;
+  color: #cd8428;
 }
 .navbar-custom .bottom-bar .search.dropdown {
   position: relative;
@@ -648,6 +646,7 @@ p {
 .about-us .section-text p {
   color: #7d7d7d;
   padding-bottom: 20px;
+  font-size: 15px;
 }
 .about-us .img-wrapper {
   position: relative;
@@ -664,14 +663,22 @@ p {
 .about-us.a-page-abt img {
   width: 100%;
 }
+#vision-img {
+  height: 483px;
+}
 .about-us.a-page-abt .section-row:first-child {
   margin-bottom: 60px;
 }
 .about-us.a-page-abt .section-text h4 {
-  color: #1e1d2b;
+  color: #1f5284;
   font-size: 22px;
   text-transform: uppercase;
   padding-bottom: 25px;
+}
+.about-us.a-page-abt .section-text h6 {
+  font-size: 17px;
+  color: #5d5b5b;
+  margin-bottom: 1rem;
 }
 .about-us.a-page-abt .section-text ul.list-text {
   color: #7d7d7d;
@@ -682,20 +689,22 @@ p {
 }
 .about-us.a-page-abt .section-text ul.list-text li {
   position: relative;
-  padding-left: 20px;
+  padding-left: 35px;
   margin-bottom: 10px;
+  font-size: 15px;
 }
 .about-us.a-page-abt .section-text ul.list-text li:last-child {
   margin-bottom: 0px;
 }
 .about-us.a-page-abt .section-text ul.list-text li:before {
-  content: "";
-  height: 7px;
-  width: 7px;
-  background: #cd8428;
   position: absolute;
-  left: 0px;
-  top: 35%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  color: #cd8428;
+  content: "\f05d";
+  font-family: "FontAwesome";
+  font-size: 20px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -767,6 +776,15 @@ p {
 .service {
   padding: 100px 0;
 }
+#serviceOffering {
+  margin-bottom: 7rem;
+}
+#serviceOffering h3{
+  margin-bottom: 2rem;
+  color: #1f5284;
+  font-size: 22px;
+  text-transform: uppercase;
+}
 .service .section-text p {
   color: #7d7d7d;
   padding-bottom: 20px;
@@ -826,6 +844,7 @@ p {
   color: #636363;
   font-size: 18px;
   padding-bottom: 25px;
+  text-transform: uppercase;
 }
 .service.ser-p-ser .section-text ul.list-text {
   color: #7d7d7d;
@@ -836,20 +855,22 @@ p {
 }
 .service.ser-p-ser .section-text ul.list-text li {
   position: relative;
-  padding-left: 20px;
+  padding-left: 35px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .service.ser-p-ser .section-text ul.list-text li:last-child {
   margin-bottom: 0px;
 }
 .service.ser-p-ser .section-text ul.list-text li:before {
-  content: "";
-  height: 7px;
-  width: 7px;
-  background: #cd8428;
   position: absolute;
-  left: 0px;
-  top: 40%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  color: #cd8428;
+  content: "\f05d";
+  font-family: "FontAwesome";
+  font-size: 20px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -886,6 +907,7 @@ p {
 .service.ser-p-ser .section-text p {
   color: #7d7d7d;
   padding-bottom: 20px;
+  font-size: 15px;
 }
 .service.ser-p-ser .section-text p:last-child {
   padding-bottom: 0;
@@ -1251,11 +1273,12 @@ p {
   padding: 100px 0;
 }
 .contact-sec .cntct-heading {
-  color: #1e1d2b;
+  color: #1e5486;
   font-size: 24px;
   font-weight: 700;
   font-family: "open-sans";
   padding: 0 0 40px 0;
+  text-transform: uppercase;
 }
 .contact-sec .form-group {
   margin-bottom: 20px;
@@ -1293,7 +1316,8 @@ p {
   color: #959595;
 }
 .contact-sec .contact-des li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 17px;
 }
 .contact-sec .contact-des li i {
   margin-right: 10px;
@@ -1374,7 +1398,7 @@ p {
   font-weight: 300;
   height: 60px;
   width: 60px;
-  background: #cd8428;
+  background: #  ;
   text-align: center;
   margin-right: 10px;
 }
@@ -1520,13 +1544,22 @@ p {
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1199px) {
+  #navOffice.col-md-offset-1 {
+    margin-left: 0%;
+  }
+  #navBar.col-md-offset-1 {
+    margin-left: 0%;
+    width: 60%;
+
+  }
   .footer-wrapper .contact-col {
     font-size: 11px;
     line-height: 18px;
   }
 
   .navbar-custom .navbar-brand {
-    padding: 41px 20px;
+    /* padding: 41px 20px; */
+    padding: 18px 6px;
   }
 
   .navbar-custom.affix .navbar-brand {
@@ -1579,7 +1612,8 @@ p {
   }
 
   .navbar-custom .navbar-brand {
-    padding: 44px 15px;
+    /* padding: 44px 15px; */
+    padding: 30px 0px 11px;
   }
 
   .navbar-custom.affix .navbar-brand {
@@ -1710,6 +1744,7 @@ p {
   .navbar-custom .bottom-bar .search.dropdown .dropbtn {
     width: 58px;
     height: 58px;
+    display: none;
   }
 
   .navbar-custom .bottom-bar .office .nice-select {
@@ -1746,6 +1781,16 @@ p {
     padding: 50px 0;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 992px) {
+  .navbar-custom .navbar-brand {
+    padding: 15px 3px 11px;
+  }
+
+  #navBar.col-md-6 {
+    width: 60%;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .container {
     width: 720px;
@@ -1811,6 +1856,7 @@ p {
 
   .navbar-custom .navbar-toggle {
     padding: 8px 0px;
+    color: #284f7b
   }
 
   .navbar-custom .navbar-toggle:hover {
@@ -1823,7 +1869,8 @@ p {
   }
 
   .navbar-custom {
-    background: #101327;
+    /* background: #101327; */
+    background: #fff;
   }
   .navbar-custom .navbar-collapse {
     width: 100%;
@@ -1840,7 +1887,7 @@ p {
   }
   .navbar-custom.affix .navbar-brand img,
   .navbar-custom .navbar-brand img {
-    max-height: 5.9rem;
+    max-height: 5.6rem;
   }
   .navbar-custom .bottom-bar .nav {
     margin-left: 0px;
