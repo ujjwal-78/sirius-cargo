@@ -375,7 +375,7 @@ p {
 }
 .navbar-custom .bottom-bar .search.dropdown .dropbtn:hover {
   background: #1d5385;
-  transition: background .3s ease-out;
+  transition: background 0.3s ease-out;
 }
 
 .navbar-custom .navbar-collapse {
@@ -387,7 +387,7 @@ p {
     4.0 Banner Styling
    ========================================================================== */
 .banner-content.carousel-fade {
-  height: 900px;
+  height: 755px;
   /* Background images are set within the HTML using inline CSS, not here */
 }
 .banner-content.carousel-fade .carousel-inner .item {
@@ -520,28 +520,6 @@ p {
 .banner-content.carousel-fade .tab-box .custom-tab .tab-content h4 {
   font-size: 30px;
   padding-bottom: 15px;
-}
-.banner-content.carousel-fade .tracking {
-  background: rgba(25, 28, 48, 0.9);
-  color: #fff;
-  padding: 70px 0;
-  z-index: 100;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 100%;
-}
-.banner-content.carousel-fade .tracking h3 {
-  font-size: 30px;
-}
-.banner-content.carousel-fade .tracking p {
-  padding-top: 10px;
-}
-.banner-content.carousel-fade .tracking .tracking-form {
-  margin-top: 10px;
-}
-.banner-content.carousel-fade .tracking .tracking-form .form-group {
-  margin-bottom: 0px;
 }
 .banner-content.carousel-fade
   .tracking
@@ -761,11 +739,12 @@ p {
    ========================================================================== */
 .service {
   padding: 100px 0;
+  background: #f9f9f9;
 }
 #serviceOffering {
   margin-bottom: 7rem;
 }
-#serviceOffering h3{
+#serviceOffering h3 {
   margin-bottom: 2rem;
   color: #1f5284;
   font-size: 22px;
@@ -1384,7 +1363,7 @@ p {
   font-weight: 300;
   height: 60px;
   width: 60px;
-  background: #  ;
+  background: #;
   text-align: center;
   margin-right: 10px;
 }
@@ -1495,7 +1474,6 @@ p {
   }
 }
 @media only screen and (max-width: 1200px) {
-  
   .navbar-custom .masthead {
     font-size: 12px;
   }
@@ -1619,7 +1597,6 @@ p {
     padding: 24px 0px 11px;
     height: 107px;
   }
-  
 
   .navbar-custom.affix .navbar-brand {
     height: 74px;
@@ -1787,7 +1764,6 @@ p {
   }
 }
 
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .container {
     width: 720px;
@@ -1863,7 +1839,7 @@ p {
 
   .navbar-custom .navbar-toggle {
     padding: 8px 0px;
-    color: #284f7b
+    color: #284f7b;
   }
 
   .navbar-custom .navbar-toggle:hover {
