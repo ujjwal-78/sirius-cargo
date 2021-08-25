@@ -161,12 +161,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7 left-side-col npl">
-            <form id="contact-us" action="" method="post">
+            <form method="post" action="action.php" id="contact-form">
               <h4 class="cntct-heading">For Inquiry</h4>
               <div class="form-results"></div>
               <div class="form-group npr res-xs-pad-0">
-                <label>Name *</label>
-                <input name="name" class="form-control required" type="text" />
+                <label>Full Name *</label>
+                <input name="name" class="form-control required" type="text" required/>
               </div>
               <div class="form-group npr res-xs-pad-0">
                 <label>Email *</label>
@@ -174,7 +174,12 @@
                   name="email"
                   class="form-control required email"
                   type="email"
+                  required
                 />
+              </div>
+              <div class="form-group npr res-xs-pad-0">
+                <label>Phone No. *</label>
+                <input name="phone" class="form-control" type="text" required/>
               </div>
               <div class="form-group npr res-xs-pad-0">
                 <label>Subject</label>
@@ -195,6 +200,7 @@
                 />
                 <button class="btn" type="submit">SEND</button>
               </div>
+              <div id="status2"></div>
             </form>
           </div>
           <div
@@ -329,13 +335,17 @@
               </li>
             </ul>
             <div class="subscribe col-md-4 col-sm-6 npr res-xs-pad-0">
-              <form id="subscribe-me" action="" method="post">
+              <form
+                action="mail.php"
+                method="post"
+                id="footer-contact-form"
+              >
                 <!-- <h4 class="col-heading">Newsletter Subscribe</h4> -->
                 <p>Enter your email for contact request</p>
                 <div class="form-group npr">
                   <label class="sr-only">subscribe</label>
                   <input
-                    name="EMAIL"
+                    name="email"
                     type="email"
                     class="form-control pull-left required"
                   />
@@ -349,6 +359,7 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="form-results"></div>
+                <div id="status1"></div>
               </form>
               <div class="social">
                 <a href="#"

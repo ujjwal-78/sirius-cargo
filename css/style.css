@@ -423,10 +423,10 @@ p {
   .custom-tab
   .nav-tabs.carousel-indicators {
   background: #191c30;
-  padding: 0 40px 0 40px;
+  padding: 0 20px;
   border-bottom: 1px solid #30344e;
   position: static;
-  margin-left: 0px;
+  margin-left: 0;
   width: 100%;
 }
 .banner-content.carousel-fade
@@ -2230,4 +2230,74 @@ p {
 }
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+/*************************** contact form status ***************************/
+#status2 {
+  width: 98%;
+  text-align: center;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+#status2.success {
+  color: #4f8a10;
+  background-color: #dff2bf;
+  animation: status 5s ease forwards;
+}
+#status2.error {
+  color: #d8000c;
+  background-color: #ffd2d2;
+  animation: status 5s ease forwards;
+}
+@keyframes status2 {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/**************************************** footer contact form ****************************************/
+#status1 {
+  width: 98%;
+  text-align: center;
+  padding: 4px;
+  margin: 0 auto;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+#status1.success {
+  color: #4f8a10;
+  background-color: #dff2bf;
+  animation: status 5s ease forwards;
+}
+#status1.error {
+  color: #d8000c;
+  background-color: #ffd2d2;
+  animation: status 5s ease forwards;
+}
+@keyframes status1 {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }

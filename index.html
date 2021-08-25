@@ -93,7 +93,7 @@
                     </div>
                     <div class="time contact-li">
                       <i class="fa fa-clock-o" aria-hidden="true"></i>
-                      <span>Mon - Sun 10 AM-6 PM</span>
+                      <span>Mon - Sat 10 AM-6 PM</span>
                     </div>
                   </div>
                 </div>
@@ -163,21 +163,21 @@
           <!-- Set the second background image using inline CSS below. -->
           <div
             class="fill"
-            style="background-image: url('image/header-2-bg.jpg')"
+            style="background-image: url('image/header-3-bg.jpg')"
           ></div>
         </div>
         <div class="item">
           <!-- Set the third background image using inline CSS below. -->
           <div
             class="fill"
-            style="background-image: url('image/header-3-bg.jpg')"
+            style="background-image: url('image/header-4-bg.jpg')"
           ></div>
         </div>
         <div class="item">
           <!-- Set the second background image using inline CSS below. -->
           <div
             class="fill"
-            style="background-image: url('image/header-4-bg.jpg')"
+            style="background-image: url('image/header-5-bg.jpg')"
           ></div>
         </div>
       </div>
@@ -214,8 +214,8 @@
                       alt=""
                       width="45"
                       height="41"
-                      src="image/road-f.png"
-                    /><br />Road Frieght</a
+                      src="image/ship-f.png"
+                    /><br />Ocean Frieght</a
                   >
                 </li>
                 <li
@@ -228,8 +228,8 @@
                       alt=""
                       width="42"
                       height="41"
-                      src="image/ship-f.png"
-                    /><br />Sea Frieght</a
+                      src="image/rail-f.png"
+                    /><br />Rail Frieght</a
                   >
                 </li>
                 <li
@@ -237,13 +237,13 @@
                   data-target="#myCarousel"
                   data-slide-to="3"
                 >
-                  <a href="#Rail-Frieght" role="tab" data-toggle="tab"
+                  <a href="#Customs" role="tab" data-toggle="tab"
                     ><img
                       alt=""
                       width="31"
                       height="41"
-                      src="image/rail-f.png"
-                    /><br />Rail Frieght</a
+                      src="image/custom-c.png"
+                    /><br />Custom Clearance</a
                   >
                 </li>
               </ol>
@@ -263,18 +263,7 @@
                   </p>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="Road-Frieght">
-                  <h4>Road Transportation</h4>
-                  <p>
-                    No problem is too great for Sirius Cargo. We pride ourselves
-                    in solving problems by offering customized solutions to each
-                    and every customer. With our global network, we are ready to
-                    find the best way to move your freight. Our experts are
-                    ready to work with you to find excellent options for
-                    efficiency and reduced cost.
-                  </p>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="Ship-Frieght">
-                  <h4>Ship Transportation</h4>
+                  <h4>Ocean Transportation</h4>
                   <p>
                     We provide dedicated sea freight forwarding services
                     throughout the world and we are here, ready to help you to
@@ -283,7 +272,7 @@
                     our sea freight forwarding operates in all major trades.
                   </p>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="Rail-Frieght">
+                <div role="tabpanel" class="tab-pane" id="Ship-Frieght">
                   <h4>Rail Transportation</h4>
                   <p>
                     Sirius Cargo has developed and implemented a roster of
@@ -293,6 +282,17 @@
                     sustainable option for our clients. We integrate rail into
                     our supply chain in a way that makes good economic sense and
                     is most efficient and environmentally minded.
+                  </p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Customs">
+                  <h4>Custom Clearance</h4>
+                  <p>
+                    Globalization has increased international trade – an area
+                    that is quickly evolving and presenting major challenges and
+                    complexities to global supply chains. At Sirius Cargo, we
+                    use our worldwide customs presence and expertise to reduce
+                    complexity for peace-of-mind import and export customs
+                    brokerage activities.
                   </p>
                 </div>
               </div>
@@ -366,8 +366,7 @@
             <p>
               Your logistics needs are at the heart of our business, whether you
               need to move your most complex cargo across continents, or even
-              the smallest of consignments, Sirius Cargo Agency Services is for
-              you.
+              the smallest of consignments, Sirius Cargo Services is for you.
             </p>
             <a class="p-btn" href="service.html"
               >Read More
@@ -720,13 +719,13 @@
               </li>
             </ul>
             <div class="subscribe col-md-4 col-sm-6 npr res-xs-pad-0">
-              <form id="subscribe-me" action="" method="post">
+              <form action="mail.php" method="post" id="footer-contact-form">
                 <!-- <h4 class="col-heading">Newsletter Subscribe</h4> -->
                 <p>Enter your email for contact request</p>
                 <div class="form-group npr">
                   <label class="sr-only">subscribe</label>
                   <input
-                    name="EMAIL"
+                    name="email"
                     type="email"
                     class="form-control pull-left required"
                   />
@@ -740,6 +739,7 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="form-results"></div>
+                <div id="status1"></div>
               </form>
               <div class="social">
                 <a href="#"
